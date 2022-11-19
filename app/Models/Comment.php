@@ -5,11 +5,12 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Post extends Model
+class Comment extends Model
 {
     use HasFactory;
     
     protected $fillable = [
+        'post_id',
         'name' ,
         'title',
         'body',
@@ -17,14 +18,12 @@ class Post extends Model
         
     public function getPaginateByLimit(int $limit_count = 5)
     {
-        return $this->orderBy('updated_at', 'DESC')->paginate($limit_count);
+        return $this::with('post')->orderBy('updated_at', 'DESC')->paginate($limit_count);
     }
     
-    public function comment()
+    public function post()
     {
-        return $this -> hasMany(Comment::class);
+        return $this -> belongsTo(Post::class);
     }
     
 }
-
-
