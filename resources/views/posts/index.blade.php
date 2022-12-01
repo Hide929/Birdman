@@ -9,6 +9,7 @@
     <body>
         <h1>掲示板</h1>
         <a href='/posts/create'>投稿作成</a>
+        <a href='/posts/history'>大会の歴史</a>
         <div class='posts'>
             @foreach ($posts as $post)
                 <div class='post'>

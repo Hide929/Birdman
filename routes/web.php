@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PostController;
 use App\Http\Controllers\CommentController;
+use App\Http\Controllers\RecordController;
 
 /*
 |--------------------------------------------------------------------------
@@ -19,6 +20,9 @@ use App\Http\Controllers\CommentController;
 
 Route::get('/', [PostController::class, 'index']);
 Route::get('/posts/create', [PostController::class, 'create']);
+Route::get('/posts/history', [RecordController::class, 'history']);
+Route::get('/posts/add', [RecordController::class, 'add']);
+Route::post('/posts/save', [RecordController::class, 'save']);
 Route::get('/posts/{post}', [PostController::class ,'show']);
 Route::get('/posts/{post}/reply', [PostController::class, 'reply']);
 Route::post('/posts', [PostController::class, 'store']);

@@ -17,10 +17,6 @@ class PostController extends Controller
     public function show(Post $post, Comment $comment)
     {
         //dd($post->id);
-        //dd($comment -> where('post_id',$post->id) -> get());
-        
-        //$comment = blog\app\Models\Post::where('post_id', $post->id)->first();
-        
         return view('posts/show')->with(['post' => $post, 'comments' => $comment -> where('post_id',$post->id) -> get()]);   
        
     }
@@ -41,6 +37,7 @@ class PostController extends Controller
         $post->fill($input)->save();
         return redirect('/posts/' . $post->id);
     }
+    
     
 }
 
