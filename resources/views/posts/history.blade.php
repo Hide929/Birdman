@@ -1,16 +1,15 @@
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     <head>
-        <meta charset="utf-8">
+        <meta charset="UTF-8">
         <title>鳥人間.com</title>
         <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
+        
+        <link rel="stylesheet" href="/css/style.css">
+        
     </head>
     
-
-   
-
-    
+    <body>
     <table>
      <thead>
         <tr>
@@ -25,12 +24,26 @@
         </tr>
       </thead>
         <tbody>
-            <h1>大会の歴史</h1>
+            <h1>鳥人間.com</h1>
+            
+            <p>鳥人間コンテストの記録検索ページです</p>
+            
+            <nav>
+            <ul>
+            <li class="current"><a href="/">Home</a></li>
+            <li><a href='/posts/index'>質問部屋</a></li>
+            </ul>
+            </nav>
+            
+        <div>
+            
+            <div class="flex">
+
             
             
-            <form method="GET" action="/posts/history">
+            <form method="GET" action="/">
                 <label for="years">年度
-                <div>
+                <div class = "item box1">
                     <select id="year"  name="year">
                         <option value="">全て</option>
                         @foreach($years_list as $years_item)
@@ -41,7 +54,7 @@
                 </label>
                 
                 <label for="">部門
-                <div>
+                <div class = "item box2">
                     <select name="award">
                         <option value="">全て</option>
                         @foreach($awards_list as $awards_item)
@@ -53,19 +66,28 @@
                 
                 
                  <label for="">キーワード
-                    <div>
+                    <div class = "item box3">
                     <input type="text" placeholder="チーム名・氏名を入力" name="keyword" value="{{ $keyword }}">
                     </div>
                     @csrf
-                    <div>
-                       <input type="submit" class="btn" value=検索>
-                    </div>
+                   
                 </label>
+                
+            </div>
+                
+                <div>
+                       <input type="submit" class="btn" value=検索>
+                </div>
             </form>
             
-            <a href='/posts/add'>add</a>
+            
+            
+            
             
             <div class='records'>
+                
+            <table>
+                <tbody>
               
                 @foreach ($records as $record)
                     <tr>
@@ -80,6 +102,9 @@
                         
                     </tr>
                 @endforeach
+                
+                </tbody>
+            </table>
                
                 
                 <div class='paginate'>{{ $records->links('pagination::bootstrap-4') }}</div>
@@ -92,9 +117,7 @@
         </tbody>
     </table>
     
-            <div class="footer">
-                <a href="/">戻る</a>
-            </div>
+    </body>   
     
             
     

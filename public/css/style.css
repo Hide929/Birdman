@@ -1,0 +1,87 @@
+@charset "UTF-8";
+
+title {
+    text-align:center;
+}
+
+body {
+    background-color: #4EC199;
+    
+}
+
+h1 {
+    color: #D6FEE2;
+}
+
+table {
+    background-color: #cdefff;  /* 背景色指定 */
+    
+}
+ 
+th {
+    background-color: #00e2cf;  /* 背景色指定 */
+}
+
+
+
+th,td {
+    text-align: center;
+    border: solid 1px;  /* 枠線指定 */
+    padding: 10px;      /* 余白指定 */
+    width:  120px;              /* 幅指定 */
+    height: 40px;               /* 高さ指定 */
+}
+ 
+table {
+    border-collapse:  collapse; /* セルの線を重ねる */
+}
+
+.flex{
+    display: flex;
+    margin-top: 50px;
+}
+
+
+.item {
+        margin: 1px;
+}
+
+.btn {
+    margin-bottom: 50px;
+}
+
+.paginate {
+    margin-top: 50px;
+}
+
+nav{
+    text-align: center;
+}
+
+nav ul{
+    margin: 0 ;
+    padding: 0 ;
+}
+
+nav li{
+    list-style: none;
+    display: inline-block;
+    width: 10%;
+    min-width: 90px;
+    
+}
+
+nav li:not(:last-child){
+    border-right:2px solid #ddd;
+}
+
+nav a{
+    text-decoration: none;
+    color: #333;
+}
+
+nav a:hover{
+    color:#F7CB4D;
+    border-bottom:2px solid #F7CB4D;
+}
+

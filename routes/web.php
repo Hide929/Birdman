@@ -18,9 +18,9 @@ use App\Http\Controllers\RecordController;
 
 
 
-Route::get('/', [PostController::class, 'index']);
+Route::get('/posts/index', [PostController::class, 'index']);
+Route::get('/', [RecordController::class, 'history']);
 Route::get('/posts/create', [PostController::class, 'create']);
-Route::get('/posts/history', [RecordController::class, 'history']);
 Route::get('/posts/add', [RecordController::class, 'add']);
 Route::post('/posts/save', [RecordController::class, 'save']);
 Route::get('/posts/{post}', [PostController::class ,'show']);

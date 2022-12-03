@@ -3,6 +3,7 @@
     <head>
         <meta charset="utf-8">
         <title>鳥人間.com</title>
+        <link rel="stylesheet" href="/css/style.css">
     </head>
     <body>
         <h1>掲示板</h1>

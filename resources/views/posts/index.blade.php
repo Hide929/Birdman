@@ -4,12 +4,28 @@
         <meta charset="utf-8">
         <title>鳥人間.com</title>
         <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
+        
+        <link rel="stylesheet" href="/css/style.css">
+      
     </head>
+    
+    
     <body>
-        <h1>掲示板</h1>
+        
+
+        
+  
+        
+        <h1>質問部屋</h1>
+                
+        <nav>
+        <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href='/posts/index'>質問部屋</a></li>
+        </ul>
+        </nav>
+        
         <a href='/posts/create'>投稿作成</a>
-        <a href='/posts/history'>大会の歴史</a>
         <div class='posts'>
             @foreach ($posts as $post)
                 <div class='post'>
@@ -21,5 +37,10 @@
          <div class='paginate'>
             {{ $posts->links() }}
         </div>
+        
+             <div class="footer">
+                <a href="/">戻る</a>
+            </div>
+        
     </body>
 </html>
