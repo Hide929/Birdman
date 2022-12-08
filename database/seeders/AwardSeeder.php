@@ -16,7 +16,7 @@ class AwardSeeder extends Seeder
      */
     public function run()
     {
-        /*DB::table('awards')->insert([
+        DB::table('awards')->insert([
         'id' => '1',
         'name' => '滑空機部門',
         'created_at' => new DateTime(),
@@ -29,7 +29,7 @@ class AwardSeeder extends Seeder
         'created_at' => new DateTime(),
         'updated_at' => new DateTime(),
         ]);
-        */
+        
         
         DB::table('awards')->insert([
         'id' => '3',
