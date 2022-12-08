@@ -62,7 +62,7 @@ class RecordController extends Controller
           $query -> where('award_id', $award);
         }
         
-       $records = $query->orderby('id', 'DESC')->paginate(10);
+       $records = $query->orderby('id', 'DESC')->paginate(20);
         
         
         

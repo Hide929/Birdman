@@ -16,10 +16,10 @@ return new class extends Migration
         Schema::create('records', function (Blueprint $table) {
             $table->id();
             $table->foreignId('year_id')->constrained();
-            $table->string('team_name',50);
-            $table->string('player_name', 50);
+            $table->string('team_name',50)->nullable();
+            $table->string('player_name', 50)->nullable();
             $table->foreignId('Age')->nullable();
-            $table->string('distance',50);
+            $table->string('distance',50)->nullable();
             $table->foreignId('award_id')->constrained();
             $table->foreignId('rank')->nullable();
             $table->string('other', 50)->nullable();

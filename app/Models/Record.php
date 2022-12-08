@@ -20,7 +20,7 @@ class Record extends Model
         'other',
         ];
     
-    public function getPaginateByLimit(int $limit_count = 10)
+    public function getPaginateByLimit(int $limit_count = 20)
     {
         return $this->orderby('id', 'DESC')->paginate($limit_count);
     }
