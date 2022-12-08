@@ -18,7 +18,7 @@ class RecordsSeeder extends Seeder
     {
         /*---------------第1回-------------- */
         
-        
+        /*
         
          DB::table('records')->insert([
         'year_id' => '1',
@@ -415,6 +415,8 @@ class RecordsSeeder extends Seeder
         'created_at' => new DateTime(),
         'updated_at' => new DateTime(),
         ]);
+        
+        */
 
         //第4回
                 
