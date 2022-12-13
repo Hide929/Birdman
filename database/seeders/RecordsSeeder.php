@@ -422,7 +422,7 @@ class RecordsSeeder extends Seeder
                 
         DB::table('records')->insert([
         'year_id' => '4',
-        'team_name' => NULL,
+        'team_name' => '------',
         'player_name' => 'ジョージ・フォールマン',
         'Age' => '25',
         'distance' => '	73.86 m',
@@ -513,7 +513,7 @@ class RecordsSeeder extends Seeder
                                         
         DB::table('records')->insert([
         'year_id' => '4',
-        'team_name' => NULL,
+        'team_name' => '------',
         'player_name' => '図師　理',
         'Age' => '27',
         'distance' => '90.35 m',
@@ -609,7 +609,7 @@ class RecordsSeeder extends Seeder
                                        
         DB::table('records')->insert([
         'year_id' => '5',
-        'team_name' => NULL,
+        'team_name' => '------',
         'player_name' => '山本　隆',
         'Age' => '28',
         'distance' => '80.92 m',
@@ -648,7 +648,7 @@ class RecordsSeeder extends Seeder
                                                                
         DB::table('records')->insert([
         'year_id' => '5',
-        'team_name' => NULL,
+        'team_name' => '------',
         'player_name' => '矢吹　博',
         'Age' => '31',
         'distance' => '88.56 m',
@@ -661,7 +661,7 @@ class RecordsSeeder extends Seeder
                                                                        
         DB::table('records')->insert([
         'year_id' => '5',
-        'team_name' => NULL,
+        'team_name' => '------',
         'player_name' => '桑原政彰',
         'Age' => '26',
         'distance' => '90.19 m',
@@ -704,7 +704,7 @@ class RecordsSeeder extends Seeder
                                                                               
         DB::table('records')->insert([
         'year_id' => '6',
-        'team_name' => NULL,
+        'team_name' => '------',
         'player_name' => '楠　正彰',
         'Age' => '27',
         'distance' => '89.29 m',
@@ -769,7 +769,7 @@ class RecordsSeeder extends Seeder
                                                                                                               
         DB::table('records')->insert([
         'year_id' => '6',
-        'team_name' => NULL,
+        'team_name' => '------',
         'player_name' => '大平　英二',
         'Age' => '30',
         'distance' => '103.40 m',
@@ -823,7 +823,7 @@ class RecordsSeeder extends Seeder
                                                                                                                               
         DB::table('records')->insert([
         'year_id' => '7',
-        'team_name' => NULL,
+        'team_name' => '------',
         'player_name' => '楠　正彰',
         'Age' => '28',
         'distance' => '	114.22 m',
@@ -849,7 +849,7 @@ class RecordsSeeder extends Seeder
                                                                                                                                       
         DB::table('records')->insert([
         'year_id' => '7',
-        'team_name' => NULL,
+        'team_name' => '------',
         'player_name' => '長嶋正義',
         'Age' => '27',
         'distance' => '122.28 m',
@@ -1072,7 +1072,7 @@ class RecordsSeeder extends Seeder
                                                                                                                                                                                                                                                                               
         DB::table('records')->insert([
         'year_id' => '8',
-        'team_name' => NULL,
+        'team_name' => '------',
         'player_name' => '楠　正彰',
         'Age' => '29',
         'distance' => '163.03 m',
@@ -1139,7 +1139,7 @@ class RecordsSeeder extends Seeder
                                                                                                                                                                                                                                                                                                                       
         DB::table('records')->insert([
         'year_id' => '9',
-        'team_name' => NULL,
+        'team_name' => '------',
         'player_name' => '楠　正影',
         'Age' => '30',
         'distance' => '142.82 m',
@@ -1323,7 +1323,7 @@ class RecordsSeeder extends Seeder
                                                                                                                                                                                                                                                                                                                                                                                                                               
         DB::table('records')->insert([
         'year_id' => '10',
-        'team_name' =>  NULL,
+        'team_name' =>  '------',
         'player_name' => '楠　正彰',
         'Age' => '31',
         'distance' => '154.26 m',
@@ -1494,7 +1494,7 @@ class RecordsSeeder extends Seeder
                                                                                                                                                                                                                                                                                                                                                                               
         DB::table('records')->insert([
         'year_id' => '11',
-        'team_name' => NULL,
+        'team_name' => '------',
         'player_name' => '野田保人',
         'Age' => '59',
         'distance' => '96.24 m',
@@ -1520,7 +1520,7 @@ class RecordsSeeder extends Seeder
                                                                                                                                                                                                                                                                                                                                                                                              
         DB::table('records')->insert([
         'year_id' => '11',
-        'team_name' => NULL,
+        'team_name' => '------',
         'player_name' => '楠　正彰',
         'Age' => '32',
         'distance' => '114.61 m',
@@ -1624,7 +1624,7 @@ class RecordsSeeder extends Seeder
                                                                                                                                                                                                                                                                                                                                                                                                                                                              
         DB::table('records')->insert([
         'year_id' => '11',
-        'team_name' =>  NULL,
+        'team_name' =>  '------',
         'player_name' => '大岡勝男',
         'Age' => '26',
         'distance' => '21.37 m',
@@ -1637,7 +1637,7 @@ class RecordsSeeder extends Seeder
                                                                                                                                                                                                                                                                                                                                                                                                                                                                     
         DB::table('records')->insert([
         'year_id' => '11',
-        'team_name' =>  NULL,
+        'team_name' =>  '------',
         'player_name' => '矢島靖英',
         'Age' => '38',
         'distance' => '22.04 m',
@@ -1769,7 +1769,7 @@ class RecordsSeeder extends Seeder
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     
         DB::table('records')->insert([
         'year_id' => '12',
-        'team_name' =>  NULL,
+        'team_name' =>  '------',
         'player_name' => '野田保人',
         'Age' => '60',
         'distance' => '130.70 m',
@@ -2230,7 +2230,7 @@ class RecordsSeeder extends Seeder
                                                                         
         DB::table('records')->insert([
         'year_id' => '15',
-        'team_name' =>  NULL,
+        'team_name' =>  '------',
         'player_name' => '秋元靖史',
         'Age' => '27',
         'distance' => '195.75 m',
@@ -2401,7 +2401,7 @@ class RecordsSeeder extends Seeder
                                                                                                                                                                                 
         DB::table('records')->insert([
         'year_id' => '16',
-        'team_name' =>  NULL,
+        'team_name' =>  '------',
         'player_name' => '天野新吉',
         'Age' => '61',
         'distance' => '100.63 m',
